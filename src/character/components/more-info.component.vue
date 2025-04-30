@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-  <pv-button as="a" label="More info" :href="url" target="_blank" rel="noopener" />
+  <pv-button as="a" :label="$t('article.read-more')" :href="url" target="_blank" rel="noopener" />
 </template>
 
 <style scoped>

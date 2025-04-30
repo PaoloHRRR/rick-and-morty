@@ -11,7 +11,7 @@ export default {
     </div>
     <div class="footer-section">
       <p>
-        Developed by: Henry Reaño
+        {{ $t('footer.author') }} Henry Reaño
       </p>
     </div>
   </footer>

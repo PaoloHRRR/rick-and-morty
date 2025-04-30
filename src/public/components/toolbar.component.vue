@@ -11,7 +11,7 @@ export default {
 <template>
   <pv-toolbar class="on-top">
     <template #start>
-      <p>Rick and Morty Characters</p>
+      <p>{{ $t('title') }}</p>
     </template>
 
     <template #end>

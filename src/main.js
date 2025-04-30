@@ -9,10 +9,12 @@ import SelectButton from 'primevue/selectbutton';
 import Toolbar from 'primevue/toolbar';
 import Aura from '@primevue/themes/aura'
 import 'primeicons/primeicons.css';
+import i18n from "./i18n.js";
 
-const app = createApp(App);
 
-app.use(PrimeVue, { ripple: true, theme: { preset: Aura }})
+const app = createApp(App)
+    .use(PrimeVue, { ripple: true, theme: { preset: Aura }})
+    .use(i18n)
     .component('pv-card', Card)
     .component('pv-image', Image)
     .component('pv-button', Button)

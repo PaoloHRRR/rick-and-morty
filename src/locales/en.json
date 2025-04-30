@@ -1,10 +1,10 @@
 {
   "title": "Rick and Morty Characters",
   "article": {
-    "read-more": "Leer más",
-    "share": "Compartir"
+    "read-more": "Read more",
+    "share": "Share"
   },
   "footer": {
-    "author": "Creado por"
+    "author": "Developed by "
   }
 }

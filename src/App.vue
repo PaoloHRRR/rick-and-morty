@@ -5,6 +5,7 @@ import {CharacterAssembler} from "./character/services/character.assembler.js";
 import FooterContent from "./public/components/footer.component.vue";
 import ToolbarContent from "./public/components/toolbar.component.vue";
 
+
 export default {
   name: 'App',
   components: {

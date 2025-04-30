@@ -6,8 +6,8 @@ export class CharacterAssembler {
             name: resource.name,
             species: resource.species,
             gender: resource.gender,
-            origin: resource.origin?.name,
-            location: resource.location?.name,
+            origin: resource.origin,
+            location: resource.location,
             image: resource.image
         });
     }

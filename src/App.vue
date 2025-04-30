@@ -21,7 +21,9 @@ export default {
   },
   methods: {
     loadCharacters() {
-      this.api.getCharactersById([1, 2, 3, 4, 5]) // IDs de ejemplo
+      const ids = Array.from({ length: 500 }, (_, i) => i + 1); // [1, 2, ..., 100]
+
+      this.api.getCharactersById(ids)
           .then((response) => {
             this.characters = CharacterAssembler.toEntitiesFromResponse(response);
           })

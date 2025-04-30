@@ -1,5 +1,16 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import { createApp } from 'vue';
+import './style.css';
+import App from './App.vue';
+import PrimeVue from 'primevue/config';
+import Card from 'primevue/card';
+import Image from 'primevue/image';
+import Aura from '@primevue/themes/aura'
+import 'primeicons/primeicons.css';
 
-createApp(App).mount('#app')
+const app = createApp(App);
+
+app.use(PrimeVue, { ripple: true, theme: { preset: Aura }})
+    .component('pv-card', Card)
+    .component('pv-image', Image);
+
+app.mount('#app');

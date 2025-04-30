@@ -5,7 +5,8 @@
     "share": "Share"
   },
   "footer": {
-    "author": "Developed by "
+    "author": "Developed by ",
+    "right": "All rights reserved"
   },
   "character": {
     "specie": "Specie",

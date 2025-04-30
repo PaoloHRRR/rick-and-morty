@@ -5,7 +5,8 @@
     "share": "Compartir"
   },
   "footer": {
-    "author": "Desarrollado por "
+    "author": "Desarrollado por ",
+    "right": "Todos los derechos reservados"
   },
   "character": {
     "specie": "Especie",

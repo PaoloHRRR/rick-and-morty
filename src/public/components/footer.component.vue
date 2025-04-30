@@ -7,7 +7,7 @@ export default {
 <template>
   <footer class="footer-container">
     <div class="footer-section">
-      <p>Copyright &copy; 2024 Rick and Morty. All rights reserved.</p>
+      <p>Copyright &copy; 2024 Rick and Morty. {{ $t('footer.right') }}.</p>
     </div>
     <div class="footer-section">
       <p>

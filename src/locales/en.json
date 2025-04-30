@@ -6,5 +6,11 @@
   },
   "footer": {
     "author": "Developed by "
+  },
+  "character": {
+    "specie": "Specie",
+    "gender": "Gender",
+    "origin": "Origin",
+    "location": "Location"
   }
 }

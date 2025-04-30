@@ -28,10 +28,10 @@ export default {
     </template>
     <template #content>
       <div class="character-details">
-        <p><strong>Species:</strong> {{ character.species }}</p>
-        <p><strong>Gender:</strong> {{ character.gender }}</p>
-        <p><strong>Origin:</strong> {{ character.origin }}</p>
-        <p><strong>Location:</strong> {{ character.location }}</p>
+        <p><strong>{{ $t('character.specie') }}:</strong> {{ character.species }}</p>
+        <p><strong>{{ $t('character.gender') }}:</strong> {{ character.gender }}</p>
+        <p><strong>{{ $t('character.origin') }}:</strong> {{ character.origin }}</p>
+        <p><strong>{{ $t('character.location') }}:</strong> {{ character.location }}</p>
       </div>
     </template>
     <template #footer>

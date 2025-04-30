@@ -3,10 +3,12 @@ import {RickAndMortyApiService} from "./character/services/rick-and-morty.api.se
 import characterListComponent from "./character/components/character-list.component.vue";
 import {CharacterAssembler} from "./character/services/character.assembler.js";
 import FooterContent from "./public/components/footer.component.vue";
+import ToolbarContent from "./public/components/toolbar.component.vue";
 
 export default {
   name: 'App',
   components: {
+    ToolbarContent,
     FooterContent,
     characterListComponent,
   },
@@ -39,6 +41,9 @@ export default {
 </script>
 
 <template>
+  <div>
+    <ToolbarContent></ToolbarContent>
+  </div>
   <div>
     <characterListComponent v-if="characters.length" :characters="characters" />
   </div>

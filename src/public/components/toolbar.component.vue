@@ -28,10 +28,11 @@ export default {
   left: 0;
   right: 0;
   z-index: 1000;
-  /**/
   width: 100%;
   background-color: #34d399;
   color: white;
+  border-radius: 0;
+  border:0;
 }
 
 .on-top p {

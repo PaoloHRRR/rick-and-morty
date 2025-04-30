@@ -28,7 +28,6 @@ export default {
   background-color: #34d399;
   color: white;
   padding: 1.5rem;
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -51,4 +50,5 @@ export default {
     margin-bottom: 0;
   }
 }
+
 </style>

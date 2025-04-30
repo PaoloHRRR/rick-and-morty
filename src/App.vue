@@ -1,12 +1,13 @@
 <script>
-
 import {RickAndMortyApiService} from "./character/services/rick-and-morty.api.service.js";
 import characterListComponent from "./character/components/character-list.component.vue";
 import {CharacterAssembler} from "./character/services/character.assembler.js";
+import FooterContent from "./public/components/footer.component.vue";
 
 export default {
   name: 'App',
   components: {
+    FooterContent,
     characterListComponent,
   },
   data() {
@@ -39,13 +40,12 @@ export default {
 
 <template>
   <div>
-    <div>
-      <characterListComponent v-if="characters.length" :characters="characters" />
-    </div>
-
+    <characterListComponent v-if="characters.length" :characters="characters" />
+  </div>
+  <div>
+    <footer-content></footer-content>
   </div>
 </template>
 
 <style scoped>
-/* estilos opcionales */
 </style>

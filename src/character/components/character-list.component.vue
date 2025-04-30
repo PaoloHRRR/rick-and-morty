@@ -1,35 +1,27 @@
 <script>
-import { ref } from 'vue';
 import CharacterItem from './character-item.component.vue';
 
 export default {
-  name: 'CharacterList',
-  components: {
-    CharacterItem
-  },
+  name: 'character-list',
+  components: { CharacterItem },
   props: {
     characters: {
       type: Array,
       required: true
     }
-  },
-  setup(props) {
-    const filteredCharacters = ref(props.characters);
-    return {
-      filteredCharacters
-    };
   }
 };
 </script>
 
 <template>
   <div class="character-list">
-    <p v-if="filteredCharacters.length === 0">No characters found.</p>
-    <div class="p-d-flex p-flex-wrap">
+    <p v-if="characters.length === 0" class="no-characters">No characters found.</p>
+    <div class="character-items">
       <character-item
-          v-for="(character, index) in filteredCharacters"
+          v-for="(character, index) in characters"
           :key="index"
-          :character="character" />
+          :character="character"
+      />
     </div>
   </div>
 </template>
@@ -37,16 +29,55 @@ export default {
 <style scoped>
 .character-list {
   margin: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  color:black;
 }
 
-.character-list .p-d-flex {
+.no-characters {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+}
+
+.character-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 15px;
 }
 
-.character-list .character-item {
-  margin: 10px;
+.character-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
   width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.character-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.character-item h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.character-item p {
+  font-size: 1rem;
+  color: #666;
+}
+.character-list {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
 }
 </style>

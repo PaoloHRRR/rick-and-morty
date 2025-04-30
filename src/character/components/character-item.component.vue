@@ -46,6 +46,7 @@ export default {
   width: 30%;
   margin: 10px;
   border-radius: 8px;
+  color: black;
 }
 
 .character-img {

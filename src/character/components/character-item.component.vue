@@ -1,11 +1,17 @@
 <script>
+import moreInfoComponent from "./more-info.component.vue";
+
 export default {
   name: 'CharacterItem',
+  components: {moreInfoComponent},
   props: {
     character: {
       type: Object,
       required: true
     }
+  },
+  created() {
+    console.log(this.character)
   }
 };
 </script>
@@ -20,7 +26,6 @@ export default {
         </div>
       </div>
     </template>
-
     <template #content>
       <div class="character-details">
         <p><strong>Species:</strong> {{ character.species }}</p>
@@ -29,12 +34,16 @@ export default {
         <p><strong>Location:</strong> {{ character.location }}</p>
       </div>
     </template>
+    <template #footer>
+      <moreInfoComponent :url="character.url" />
+    </template>
   </pv-card>
 </template>
 
 <style scoped>
+
 .character-item {
-  width: 320px;
+  width: 30%;
   margin: 10px;
   border-radius: 8px;
 }

@@ -4,6 +4,7 @@ import App from './App.vue';
 import PrimeVue from 'primevue/config';
 import Card from 'primevue/card';
 import Image from 'primevue/image';
+import Button from 'primevue/button';
 import Aura from '@primevue/themes/aura'
 import 'primeicons/primeicons.css';
 
@@ -11,6 +12,7 @@ const app = createApp(App);
 
 app.use(PrimeVue, { ripple: true, theme: { preset: Aura }})
     .component('pv-card', Card)
-    .component('pv-image', Image);
+    .component('pv-image', Image)
+    .component('pv-button', Button);
 
 app.mount('#app');

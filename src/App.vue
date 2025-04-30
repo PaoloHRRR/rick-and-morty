@@ -21,7 +21,7 @@ export default {
   },
   methods: {
     loadCharacters() {
-      const ids = Array.from({ length: 500 }, (_, i) => i + 1); // [1, 2, ..., 100]
+      const ids = Array.from({ length: 50 }, (_, i) => i + 1); // [1, 2, ..., 100]
 
       this.api.getCharactersById(ids)
           .then((response) => {

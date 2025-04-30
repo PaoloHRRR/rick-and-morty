@@ -8,7 +8,8 @@ export class CharacterAssembler {
             gender: resource.gender,
             origin: resource.origin,
             location: resource.location,
-            image: resource.image
+            image: resource.image,
+            url: resource.url
         });
     }
 

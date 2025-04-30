@@ -5,7 +5,8 @@ export class Character {
         gender = '',
         origin = '',
         location = '',
-        image=''
+        image='',
+        url=''
                  }) {
         this.name = name;
         this.status = status;
@@ -14,5 +15,6 @@ export class Character {
         this.origin = origin.name;
         this.location = location.name;
         this.image = image;
+        this.url = url;
     }
 }
